@@ -1,30 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Almost time ✨ — For Raghad</title>
-    <meta name="description" content="This little corner opens on 14 October." />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body data-birthday="2025-10-14">
-    <main id="page" class="center">
-      <section class="lock-card" role="dialog" aria-labelledby="lock-title" aria-describedby="lock-desc">
-        <h1 id="lock-title">Almost time ✨</h1>
-        <p id="lock-desc">This little corner opens on 14 October.</p>
-        <div class="chip" id="countdown" aria-live="polite">—</div>
-        <p class="soft-note">Come back then for the surprise.</p>
-      </section>
-      <footer class="foot">
-        <small>With love, softly waiting.</small>
-      </footer>
-    </main>
-    <noscript>
-      Please enable JavaScript to see the live countdown.
-    </noscript>
-    <script src="script.js" defer></script>
-  </body>
-  </html>
 
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Almost Time | For Raghad 👑</title>
+  <meta name="description" content="This little corner opens on 14 October." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/favicons/site.webmanifest">
+  <link rel="stylesheet" href="locked.css" />
+</head>
+
+<body data-birthday="2025-10-14">
+  <div class="center">
+    <section class="lock-card" role="dialog" aria-labelledby="lock-title" aria-describedby="lock-desc">
+      <h1 id="lock-title">Almost time</h1>
+      <p id="lock-desc">This little corner opens on 14 October.</p>
+      <div class="chip" id="countdown" aria-live="polite">Countdown loading...</div>
+      <form id="unlockForm" class="unlock-form" autocomplete="off">
+        <label for="unlockCode">Enter the four-digit code to peek early.</label>
+        <div class="unlock-input">
+          <input id="unlockCode" name="unlockCode" type="password" inputmode="numeric" pattern="[0-9]*" maxlength="4"
+            autocomplete="one-time-code" aria-describedby="unlockStatus" />
+          <button type="submit">Unlock</button>
+        </div>
+        <p id="unlockStatus" class="unlock-status" role="status" aria-live="polite"></p>
+      </form>
+      <p class="soft-note">Come back then for the surprise.</p>
+    </section>
+    <footer class="foot">
+      <small>With love, softly waiting.</small>
+    </footer>
+  </div>
+  <noscript>
+    Please enable JavaScript to see the live countdown.
+  </noscript>
+  <!-- Mobile block overlay -->
+  <div id="mobileBlock" class="mobile-block" role="dialog" aria-modal="true" aria-hidden="true" hidden>
+    <div class="mobile-block__inner" role="document">
+      <h2 class="mobile-block__title">Please use a tablet or PC</h2>
+      <p class="mobile-block__desc">This experience was designed for larger screens. For the best experience, please
+        open this site on a tablet or computer.</p>
+      <div class="mobile-block__actions">
+      </div>
+    </div>
+  </div>
+  <script src="locked.js" defer></script>
+</body>
+
+</html>
