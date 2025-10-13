@@ -967,32 +967,35 @@ Today is a special day — your day.
 Finally 24, and it feels unreal how time has flown.
 I may not be the best writer, but for you, on this day, I’ll do my best to find the right words.
 
-It’s funny to think that just three months ago, it was an ordinary day for both of us.
-Neither of us could’ve imagined that a random moment on Roblox would turn into something so meaningful. That day started with two strangers talking, and now, here we are — three months later — having shared laughter, stories, and so many genuine moments.
+It’s funny to think that just three months ago, I didn't know you about your existence.
 
 At first, you seemed like just another person crossing my path.
 But I quickly realized I was wrong.
 Behind that first impression was someone different — someone special.
 Someone kind, welcoming, caring, mature, sincere, funny...
 A person who has this rare ability to make people feel comfortable and seen.
-You trusted me, opened up to me, and made space for me in your world — and that means more than you probably realize.
-It’s amazing how a simple connection can grow into something so strong, built on honesty, mutual respect, and trust.
+You trusted me, opened up to me, and made space for me in your world — and that means more than you probably realize. 
+You're really amazing, and if I shared a lot of my life with you, it's because I felt safe and comfortable with you.
+Every day, hour, second we spent talking, sharing and laughing has been a gift for me - so here mine to you.
+
 
 I met you at 23, and now here you are, already stepping into 24 — another year of your life, full of new goals, new memories, and new adventures.
 I hope this little surprise brings you some happiness today.
 I wish I could’ve done more — but sometimes, words are the best gift we can offer.
 
+
 And with these words, I just want you to know how much I appreciate you, and how grateful I am that our paths crossed.
 You have this warmth that makes people feel at ease, and this light that brightens even the simplest conversations.
-Thank you for your kindness, your humor, and the way you listen and care so naturally.
+Thank you for your kindness, your humor, and the way you care so naturally.
 You’ve made these past months so much better just by being yourself.
 
 Happy birthday, Raghad 🎂❤️
 May your 24th year be full of laughter, peace, and moments that make you feel as special as you truly are.
 Keep smiling, keep being you — because that’s already more than enough.
 
+PS: Forget all the bad stuff, you’re perfect just the way you are.
 
-- Fadil -`;
+- فضيل -`;
 let typingState = { running: false, idx: 0, timer: 0 };
 function startTypingLetter() {
   const area = byId("letterText") || byId("letterBody");
